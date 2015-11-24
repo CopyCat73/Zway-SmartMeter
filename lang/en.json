@@ -1,0 +1,12 @@
+{
+  "title": "SmartMeter",
+  "description": "Supplies different types of energy devices updated by Python script/smartmeter",
+  "devicename_helper": "Name for your device (e.g. current usage)",
+  "devicename": "Device name",
+  "devicescale_helper": "Scale for your device (e.g. Watt)",
+  "devicescale": "Device scale",
+  "high_threshold": "High threshold value", 
+  "medium_threshold": "Medium threshold value", 
+  "high_threshold_helper": "Limit for high threshold", 
+  "medium_threshold_helper": "Limit for medium threshold"
+ }

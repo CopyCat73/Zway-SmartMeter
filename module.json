@@ -1,0 +1,66 @@
+{
+	"singleton" : false,
+	"dependencies": [],
+	"category": "energy",
+	"author": "CopyCatz",
+	"homepage": "https://github.com/CopyCat73",
+	"icon": "green.png",
+    "moduleName": "SmartMeter",
+	"version": "1.0.0",
+	"maturity": "stable",
+	"repository": {
+		"type": "git",
+		"source": "https://github.com/CopyCat73/Zway-SmartMeter"
+	},
+	"defaults" : {
+		"title" : "__title__",
+		"description" : "__description__",
+		"deviceType" : "sensorMultilevel"
+	},
+	"schema" : {
+      "properties" : {
+         "devicename" : {
+            "required" : true,
+            "type" : "string"
+         },
+         "devicescale" : {
+            "required" : true,
+            "type" : "string"
+         },
+         "high_threshold" : {
+            "required" : false,
+            "type" : "integer"
+         },
+         "medium_threshold" : {
+            "required" : false,
+            "type" : "integer"
+         }
+      },
+      "required" : true,
+      "type" : "object"
+	},
+	"options" : {
+      "fields" : {
+         "devicename" : {
+            "helper" : "__devicename_helper__",
+            "label" : "__devicename__",
+            "order" : 1
+         },
+         "devicescale" : {
+            "helper" : "__devicescale_helper__",
+            "label" : "__devicescale__",
+            "order" : 2
+         },
+         "high_threshold" : {
+            "helper" : "__high_threshold_helper__",
+            "label" : "__high_threshold__",
+            "order" : 3
+         },
+         "medium_threshold" : {
+            "helper" : "__medium_threshold_helper__",
+            "label" : "__medium_threshold__",
+            "order" : 4
+         }
+      }
+	}
+}
