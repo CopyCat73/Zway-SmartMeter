@@ -49,8 +49,10 @@ SmartMeter.prototype.init = function (config) {
         },
         handler:  function (command, args) {
           
+            var currentDate = new Date();
             var intLevel = parseInt(args['level']);
             this.set("metrics:level", intLevel);
+            this.set('metrics:timestamp',currentDate.getTime());
             if (intLevel >= parseInt(self.config.high_threshold.toString())) {
                 this.set('metrics:icon', '/ZAutomation/api/v1/load/modulemedia/SmartMeter/red.png');
             }
